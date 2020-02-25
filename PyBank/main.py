@@ -50,12 +50,12 @@ with open(path) as csvfile:
 
 
 with open('PyBankOutput.py', 'w', newline='') as csvfile2:
-csvwriter = csv.writer(csvfile2)
-csvwriter.writerow(["Financial Analysis"])
-csvwriter.writerow(["------------------"])
-csvwriter.writerow(["Total Months: ", str(numberofrows)])
-csvwriter.writerow(["Total: $" + str(totalprofit)])
-csvwriter.writerow(["Greatest increase in profits: ", str(greatestchangemonth), " $", str(greatestchange)])
-csvwriter.writerow(["Greatest decrease in profits: ", str(biggestlosermonth), " $", str(biggestloser)])
-csvwriter.writerow(["The average change is: $", str(averagechange)])
+    csvwriter = csv.writer(csvfile2)
+    csvwriter.writerow(["Financial Analysis"])
+    csvwriter.writerow(["------------------"])
+    csvwriter.writerow(["Total Months: "+ str(numberofrows)])
+    csvwriter.writerow(["Total: $" + str(totalprofit)])
+    csvwriter.writerow(["Greatest increase in profits: "+ str(greatestchangemonth)+ " $"+ str(greatestchange)])
+    csvwriter.writerow(["Greatest decrease in profits: "+ str(biggestlosermonth)+ " $"+ str(biggestloser)])
+    csvwriter.writerow(["The average change is: $"+ str(round(averagechange,2))])
         

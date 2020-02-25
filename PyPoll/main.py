@@ -59,7 +59,7 @@ with open('PyPollOutput.py', 'w') as csvfile3:
     csvwriter.writerow(["Total Votes: "+ str(numberofvoters)])
     csvwriter.writerow(["----------------"])
     csvwriter.writerow(["Khan: "+ str(round(khanpercent,2))+ "% "+ "("+ str(round(khanvotes,2))+ "votes)"])
-    csvwriter.writerow(["Correy: "+ str(round(correypercent,3))+ "% ", "("+ str(correyvotes)+ "votes)"])
+    csvwriter.writerow(["Correy: "+ str(round(correypercent,3))+ "% "+ "("+ str(correyvotes)+ "votes)"])
     csvwriter.writerow(["Li: "+ str(round(lipercent,2))+ "% "+ "("+ str(livotes), "votes)"])
     csvwriter.writerow(["O'Tooley: "+ str(round(otooleypercent,2))+ "% "+ "("+ str(otooleyvotes)+ "votes)"])
     csvwriter.writerow(["----------------"])
