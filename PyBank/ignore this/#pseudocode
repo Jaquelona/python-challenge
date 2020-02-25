@@ -1,0 +1,15 @@
+#pseudocode
+before loop: profit = 0
+lastprofit = 0
+totalchange = 0
+greatestchange = 0
+change = 0
+
+we've already defined profit of this row as profit
+
+profit - lastprofit = change
+if change > greatestchange, then
+greatestchange = change
+totalchange += change
+now profit = "lastprofit"
+
